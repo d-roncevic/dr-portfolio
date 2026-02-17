@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <Journey />
-        <Contact onEmailClick={() => setIsFormOpen(true)} />
+        <Contact onEmailClick={() => setIsFormOpen(!isFormOpen)} />
         <ContactForm isOpen={isFormOpen} />
       </main>
     </div>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import ScrollReveal from "@/components/helper/ScrollReveal";
+import Link from "next/link";
 
 type JourneyStep = {
   year: string;
@@ -12,7 +13,8 @@ type JourneyStep = {
     title: string;
     provider: string;
     topics: string;
-    link?: string;
+    url?: string;
+    pdf?: string;
   }[];
 };
 
@@ -78,14 +80,16 @@ export default function Journey() {
         {
           title: "Front-end Development",
           provider: "Pučko otvoreno učilište Brod",
+          url: "https://uciliste-brod.hr/",
           topics: "HTML · CSS · SCSS · JavaScript · React",
-          link: "https://uciliste-brod.hr",
+          pdf: "/files/DarianRoncevic_FE_qualification.pdf",
         },
         {
           title: "React - The Complete Guide 2025",
           provider: "Academind",
+          url: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
           topics: "React · Redux · Context API · React Router · Next.js",
-          link: "https://www.udemy.com",
+          pdf: "/files/DarianRoncevic_React_certificate.pdf",
         },
       ],
     },
@@ -126,23 +130,34 @@ export default function Journey() {
                     {step.details.map((cert, certIndex) => (
                       <div
                         key={certIndex}
-                        className="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/60 backdrop-blur transition hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-white/5"
+                        className="p-6 rounded-2xl border border-neutral-200 border-neutral-800 bg-white bg-neutral-900/60 backdrop-blur transition hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-white/5"
                       >
-                        <p className="font-medium mb-1">{cert.title}</p>
-
-                        <p className="text-sm text-neutral-500 mb-2">
-                          {cert.provider}
+                        <p className="font-medium text-neutral-700 mb-1">
+                          {cert.title}
                         </p>
+                        {cert.url ? (
+                          <Link
+                            href={cert.url}
+                            target="_blank"
+                            className="text-sm text-neutral-500 mb-2 hover:underline"
+                          >
+                            {cert.provider}
+                          </Link>
+                        ) : (
+                          <p className="text-sm text-neutral-500 mb-2">
+                            {cert.provider}
+                          </p>
+                        )}
 
                         <p className="text-sm text-neutral-500 mb-3">
                           {cert.topics}
                         </p>
 
-                        {cert.link && (
+                        {cert.pdf && (
                           <a
-                            href={cert.link}
+                            href={cert.pdf}
                             target="_blank"
-                            className="inline-flex items-center gap-2 text-sm font-medium group"
+                            className="inline-flex items-center text-neutral-500 hover:underline gap-2 text-sm font-medium group"
                           >
                             View Certificate
                             <span className="transition-transform duration-300 group-hover:translate-x-1">
