@@ -27,6 +27,13 @@ export default function Header() {
           </Link>
 
           <Link
+            href="#journey"
+            className="hover:underline underline-offset-4 transition"
+          >
+            Journey
+          </Link>
+
+          <Link
             href="#contact"
             className="px-4 py-2 rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition"
           >
