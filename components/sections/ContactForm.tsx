@@ -53,7 +53,7 @@ export default function ContactForm({ isOpen }: { isOpen: boolean }) {
         ${isOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"}
       `}
     >
-      <div className="max-w-3xl mx-auto px-8 py-14 border border-neutral-200 rounded-2xl bg-white shadow-sm space-y-8">
+      <div className="w-auto md:w-2xl mx-auto px-8 py-14 border border-neutral-200 rounded-2xl bg-white shadow-sm space-y-8">
         <h3 className="text-2xl text-neutral-600 font-semibold tracking-tight">
           Send a message
         </h3>

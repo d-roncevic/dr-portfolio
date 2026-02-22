@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative px-6 py-16 mx-auto">
+    <section className="relative md:px-4 pt-4 pb-12 md:py-24 mx-auto">
       <div className="hero-glow absolute top-20 left-1/2 -translate-x-1/2" />
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center relative">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center relative">
         <div className="space-y-8">
           <p className="text-sm uppercase tracking-widest text-neutral-500">
             Frontend Developer
@@ -44,17 +44,17 @@ export default function Hero() {
               priority
             />
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto mt-4">
             <a
               href="#projects"
-              className="mt-4 px-6 py-3 bg-neutral-900 text-white rounded-lg shadow hover:bg-neutral-700 transition"
+              className="px-6 py-3 bg-neutral-900 text-white rounded-lg shadow hover:bg-neutral-700 transition w-full md:w-auto text-center"
             >
               View Projects
             </a>
             <a
               href="/files/DarianRoncevic_Resume.pdf"
               target="_blank"
-              className="mt-4 px-6 py-3 bg-neutral-900 text-white rounded-lg shadow hover:bg-neutral-700 transition"
+              className="px-6 py-3 bg-neutral-900 text-white rounded-lg shadow hover:bg-neutral-700 transition w-full md:w-auto text-center"
             >
               Download CV
             </a>

@@ -10,7 +10,7 @@ export default function Home() {
   const [isFormOpen, setIsFormOpen] = useState(false);
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans">
-      <main className="flex min-h-screen w-full bg-grid flex-col items-center justify-between py-32 px-16 sm:items-start">
+      <main className="flex min-h-screen w-full bg-grid flex-col items-center justify-between py-8 md:py-16 px-8 md:px-16 sm:items-start">
         <Hero />
         <Projects />
         <Journey />
