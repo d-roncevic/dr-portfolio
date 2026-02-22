@@ -6,13 +6,13 @@ export default function Contact({
   return (
     <section
       id="contact"
-      className="max-w-4xl mx-auto px-6 py-32 space-y-10 text-center"
+      className="max-w-4xl mx-auto md:px-6 py-16 md:py-32 space-y-10 text-center"
     >
       <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900">
         Let&apos;s Work Together
       </h2>
 
-      <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+      <p className="text-neutral-600 max-w-2xl mx-auto">
         I&apos;m currently open to frontend opportunities and freelance
         projects. Feel free to reach out.
       </p>
@@ -20,7 +20,7 @@ export default function Contact({
       <div className="flex justify-center gap-6 pt-6 flex-wrap">
         <button
           onClick={onEmailClick}
-          className="underline underline-offset-4 hover:opacity-70 transition"
+          className="text-neutral-600 bg-white px-6 py-3 rounded-xl shadow-lg hover:opacity-70 transition hover:cursor-pointer"
         >
           Email
         </button>

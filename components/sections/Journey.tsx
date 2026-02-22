@@ -96,7 +96,10 @@ export default function Journey() {
   ];
 
   return (
-    <section className="max-w-4xl mx-auto px-6 py-32 space-y-20" id="journey">
+    <section
+      className="max-w-4xl mx-auto md:px-6 md:py-16 space-y-20"
+      id="journey"
+    >
       <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900">
         My Journey
       </h2>
