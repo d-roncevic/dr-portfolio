@@ -23,12 +23,20 @@ export default function Projects() {
           />
         </ScrollReveal>
 
-        <ScrollReveal delay={150}>
+        {/* <ScrollReveal delay={150}>
           <ProjectCard
             url=""
             title="Task Manager App"
             description="Fullstack task manager with authentication and API integration."
             tech="React · Redux · REST API"
+          />
+        </ScrollReveal> */}
+        <ScrollReveal delay={150}>
+          <ProjectCard
+            url="https://github.com/d-roncevic/slothui"
+            title="slothUI"
+            description="A simple kanban-style dashboard for task management."
+            tech="TypeScript · React · TailwindCSS · JSONplaceholder · Redux"
           />
         </ScrollReveal>
         <ScrollReveal delay={300}>
@@ -37,14 +45,6 @@ export default function Projects() {
             title="Budgetwise"
             description="Budgeting application – define your income and expenses to plan your monthly spending."
             tech="JavaScript · React · TailwindCSS · Firebase"
-          />
-        </ScrollReveal>
-        <ScrollReveal delay={450}>
-          <ProjectCard
-            url="https://github.com/d-roncevic/slothui"
-            title="slothUI"
-            description="A simple kanban-style dashboard for task management."
-            tech="TypeScript · React · TailwindCSS · JSONplaceholder · Redux"
           />
         </ScrollReveal>
       </div>

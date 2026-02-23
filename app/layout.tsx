@@ -34,14 +34,14 @@ export const metadata: Metadata = {
       "Frontend Developer specialized in React, Next.js and modern web architecture.",
     url: "https://darianroncevic.vercel.app",
     siteName: "Darian Rončević Portfolio",
-    // images: [
-    //   {
-    //     url: "/og-image.png",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Darian Rončević Portfolio",
-    //   },
-    // ],
+    images: [
+      {
+        url: "/images/thumbnail.png",
+        width: 1200,
+        height: 630,
+        alt: "Darian Rončević Portfolio",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },

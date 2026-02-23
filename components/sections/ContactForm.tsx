@@ -64,7 +64,7 @@ export default function ContactForm({ isOpen }: { isOpen: boolean }) {
             <input
               type="email"
               name="email"
-              className="w-full p-3 rounded-lg border border-neutral-300 bg-white focus:outline-none focus:ring-2 focus:ring-black/20 transition"
+              className="w-full p-3 text-neutral-500 rounded-lg border border-neutral-300 bg-white focus:outline-none focus:ring-2 focus:ring-black/20 transition"
             />
           </div>
           <div className="space-y-2">
@@ -72,7 +72,7 @@ export default function ContactForm({ isOpen }: { isOpen: boolean }) {
             <input
               type="text"
               name="subject"
-              className="w-full p-3 rounded-lg border border-neutral-300 bg-white focus:outline-none focus:ring-2 focus:ring-black/20 transition"
+              className="w-full p-3 text-neutral-500 rounded-lg border border-neutral-300 bg-white focus:outline-none focus:ring-2 focus:ring-black/20 transition"
             />
           </div>
 
@@ -81,7 +81,7 @@ export default function ContactForm({ isOpen }: { isOpen: boolean }) {
             <textarea
               rows={5}
               name="message"
-              className="w-full p-3 rounded-xl border border-neutral-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-black/20 resize-none"
+              className="w-full p-3 rounded-xl text-neutral-500 border border-neutral-300 bg-transparent focus:outline-none focus:ring-2 focus:ring-black/20 resize-none"
             />
           </div>
           <input type="text" name="company" className="hidden" />
