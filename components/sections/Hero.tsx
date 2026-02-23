@@ -62,7 +62,7 @@ export default function Hero() {
 
           <div className="flex gap-4 mt-2">
             <a
-              href="https://github.com/darianroncevic"
+              href="https://github.com/d-roncevic"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -76,7 +76,7 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/darianroncevic"
+              href="https://linkedin.com/in/darian-roncevic"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -89,7 +89,7 @@ export default function Hero() {
                 <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.1-.9-2-2-2s-2 .9-2 2v5.5h-3v-10h3v1.5c.73-1.04 2.09-1.5 3.25-1.5 2.21 0 4 1.79 4 4v6.5z" />
               </svg>
             </a>
-            <a href="mailto:darian.roncevic@gmail.com" aria-label="Email">
+            <a href="mailto:roncevic.darian99@gmail.com" aria-label="Email">
               <svg
                 className="w-6 h-6 text-neutral-500 hover:text-neutral-900 transition"
                 fill="currentColor"
