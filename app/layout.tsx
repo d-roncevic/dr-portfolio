@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Darian Rončević",
   },
   description:
-    "Frontend Developer specialized in React and modern web technologies. Building fast, scalable and user-focused applications.",
+    "Frontend Developer specialized in React, Next.js and modern web architecture. I build fast, scalable and user-focused web applications with clean and maintainable code.",
   keywords: [
     "Darian Roncevic",
     "Darian Rončević",
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Darian Rončević | Frontend Developer",
     description:
-      "Frontend Developer specialized in React, Next.js and modern web architecture.",
+      "Frontend Developer specialized in React, Next.js and modern web architecture. Building fast and scalable applications.",
     url: "https://darianroncevic.vercel.app",
     siteName: "Darian Rončević Portfolio",
     images: [
       {
-        url: "/images/thumbnail.png",
+        url: "https://darianroncevic.vercel.app/images/thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Darian Rončević Portfolio",
