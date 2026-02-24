@@ -71,13 +71,13 @@ export default function Header() {
           >
             Projects
           </Link>
-          <Link
+          {/* <Link
             href="#experience"
             className="hover:underline underline-offset-4 transition"
             onClick={() => setMenuOpen(false)}
           >
             Experience
-          </Link>
+          </Link> */}
           <Link
             href="#journey"
             className="hover:underline underline-offset-4 transition"
